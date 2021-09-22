@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import './search.less'
 class Search extends React.Component {
   render() {
-    return <div>这里是react JSX语法</div>
+    return <div className="search-text">这里是react JSX语法</div>
   }
 }
 
