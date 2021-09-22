@@ -50,5 +50,11 @@ module.exports = {
         use: 'file-loader'
       }
     ]
+  },
+  watch: true, // 监听通过轮训
+  watchOptions: {
+    ignored: /node_modules/, // 忽略需要监听的文件
+    aggregateTimeout: 1000, // 在该配置时间内的更改都汇聚成一次变更
+    poll: 1000
   }
 }
