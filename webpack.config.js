@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const webpack = require('webpack')
 
 module.exports = {
   entry:{
@@ -56,5 +57,12 @@ module.exports = {
     ignored: /node_modules/, // 忽略需要监听的文件
     aggregateTimeout: 1000, // 在该配置时间内的更改都汇聚成一次变更
     poll: 1000
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    contentBase: './dist',
+    hot: true
   }
 }
