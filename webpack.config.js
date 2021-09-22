@@ -33,6 +33,21 @@ module.exports = {
           'css-loader',
           'less-loader'
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif|jpeg)$/,
+        use: [
+          {
+            loader: 'url-loader', // 也可以用file-loader
+            options: {
+              limit: 10240
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: 'file-loader'
       }
     ]
   }
