@@ -60,3 +60,18 @@ bundle.js：构建输出的文件
 
 **clean-webpack-plugin**
 - 默认会删除output指定的输出目录
+
+
+## 自动补全自动补全CSS前缀
+
+- 使用 PostCSS 插件 autoprefixer 插件自动补全CSS3前缀
+
+
+## 移动端将PX转为rem
+
+- lib-flexible.js
+- px2rem插件
+
+## 资源内联
+
+**raw-loader**
